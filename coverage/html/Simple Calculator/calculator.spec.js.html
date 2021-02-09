@@ -1,0 +1,452 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for Simple Calculator\calculator.spec.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../prettify.css" />
+    <link rel="stylesheet" href="../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../index.html">all files</a> / <a href="index.html">Simple Calculator/</a> calculator.spec.js
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">32.88% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>24/73</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>0/0</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">26.92% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>7/26</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">32.88% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>24/73</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line low'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126
+127
+128
+129
+130</td><td class="line-coverage quiet"><span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">describe("calculator.js", function () {
+  xdescribe("Calculator", function () {
+    let calculator;
+    let calculator2;
+&nbsp;
+    beforeEach(<span class="fstat-no" title="function not covered" >function () {</span>
+      // Anything inside this block executes before
+      // each spec (it) inside this describe.
+<span class="cstat-no" title="statement not covered" >      calculator = new Calculator();</span>
+<span class="cstat-no" title="statement not covered" >      calculator2 = new Calculator();</span>
+    });
+&nbsp;
+    afterEach(<span class="fstat-no" title="function not covered" >function () {</span>
+      // Anything inside this block executes after
+      // each spec (it) inside this describe.
+    });
+&nbsp;
+    it("should initialise  total", <span class="fstat-no" title="function not covered" >function () {</span>
+<span class="cstat-no" title="statement not covered" >      expect(calculator.total).toBe(0);</span>
+<span class="cstat-no" title="statement not covered" >      expect(calculator.total).toBeFalsy();</span>
+    });
+&nbsp;
+    it("can  be instantiated", <span class="fstat-no" title="function not covered" >function () {</span>
+<span class="cstat-no" title="statement not covered" >      jasmine.addMatchers(customMatchers);</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >      expect(calculator).toBeCalculator();</span>
+<span class="cstat-no" title="statement not covered" >      expect(calculator).toBeTruthy();</span>
+<span class="cstat-no" title="statement not covered" >      expect(calculator2).toBeTruthy();</span>
+<span class="cstat-no" title="statement not covered" >      expect(calculator).toEqual(calculator2);</span>
+<span class="cstat-no" title="statement not covered" >      expect(calculator.constructor.name).toContain("Calc");</span>
+    });
+&nbsp;
+    it("instantiates unique object", <span class="fstat-no" title="function not covered" >function () {</span>
+<span class="cstat-no" title="statement not covered" >      expect(calculator).not.toBe(calculator2);</span>
+    });
+&nbsp;
+    it("has common operations", <span class="fstat-no" title="function not covered" >function () {</span>
+<span class="cstat-no" title="statement not covered" >      const calculator = new Calculator();</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >      expect(calculator.add).toBeDefined(); </span>// or not.toBeUndefined();
+<span class="cstat-no" title="statement not covered" >      expect(calculator.subtract).toBeDefined();</span>
+<span class="cstat-no" title="statement not covered" >      expect(calculator.multiply).toBeDefined();</span>
+<span class="cstat-no" title="statement not covered" >      expect(calculator.divide).toBeDefined();</span>
+    });
+&nbsp;
+    it("can overwrite total", <span class="fstat-no" title="function not covered" >function () {</span>
+<span class="cstat-no" title="statement not covered" >      const calculator = new Calculator();</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >      calculator.total = null;</span>
+<span class="cstat-no" title="statement not covered" >      expect(calculator.total).toBeNull();</span>
+    });
+&nbsp;
+    describe("add()", function () {
+      it("should add numbers to total", <span class="fstat-no" title="function not covered" >function () {</span>
+<span class="cstat-no" title="statement not covered" >        calculator.add(5);</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >        expect(calculator.total).toBe(5);</span>
+      });
+&nbsp;
+      it("returns total", <span class="fstat-no" title="function not covered" >function () {</span>
+<span class="cstat-no" title="statement not covered" >        calculator.total = 50;</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >        expect(calculator.add(20)).toBe(70);</span>
+<span class="cstat-no" title="statement not covered" >        expect(calculator.total).toMatch(/-?\d+/);</span>
+<span class="cstat-no" title="statement not covered" >        expect(typeof calculator.total).toMatch("number");</span>
+<span class="cstat-no" title="statement not covered" >        expect(calculator.total).toBeNumber(); </span>// with a third party matcher!
+<span class="cstat-no" title="statement not covered" >        expect(calculator.total).toEqual(jasmine.anything());</span>
+      });
+    });
+&nbsp;
+    describe("subtract()", function () {
+      it("should subtract numbers from total", <span class="fstat-no" title="function not covered" >function () {</span>
+<span class="cstat-no" title="statement not covered" >        calculator.total = 30;</span>
+<span class="cstat-no" title="statement not covered" >        calculator.subtract(5);</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >        expect(calculator.total).toBe(25);</span>
+      });
+    });
+&nbsp;
+    describe("multiply()", function () {
+      it("should multiply total by number", <span class="fstat-no" title="function not covered" >function () {</span>
+<span class="cstat-no" title="statement not covered" >        calculator.total = 100;</span>
+<span class="cstat-no" title="statement not covered" >        calculator.multiply(2);</span>
+<span class="cstat-no" title="statement not covered" >        expect(calculator.total).toBe(200);</span>
+      });
+&nbsp;
+      it("does not handle NaN", <span class="fstat-no" title="function not covered" >function () {</span>
+<span class="cstat-no" title="statement not covered" >        calculator.total = 20;</span>
+<span class="cstat-no" title="statement not covered" >        calculator.multiply("a");</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >        expect(calculator.total).toBeNaN();</span>
+      });
+&nbsp;
+      it("handles divide by zero", <span class="fstat-no" title="function not covered" >function () {</span>
+<span class="cstat-no" title="statement not covered" >        expect(<span class="fstat-no" title="function not covered" >function () {</span></span>
+<span class="cstat-no" title="statement not covered" >          calculator.divide(0);</span>
+        }).toThrow();
+<span class="cstat-no" title="statement not covered" >        expect(<span class="fstat-no" title="function not covered" >function () {</span></span>
+<span class="cstat-no" title="statement not covered" >          calculator.divide(0);</span>
+        }).toThrowError(Error);
+<span class="cstat-no" title="statement not covered" >        expect(<span class="fstat-no" title="function not covered" >function () {</span></span>
+<span class="cstat-no" title="statement not covered" >          calculator.divide(0);</span>
+        }).toThrowError(Error, "Cannot divide by zero");
+      });
+    });
+&nbsp;
+    describe("divide()", function () {
+      it("should divide total by number", <span class="fstat-no" title="function not covered" >function () {</span>
+<span class="cstat-no" title="statement not covered" >        calculator.total = 200;</span>
+<span class="cstat-no" title="statement not covered" >        calculator.divide(2);</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >        expect(calculator.total).toBe(100);</span>
+      });
+    });
+&nbsp;
+    describe("get version", function () {
+      it("fetches version from external source", <span class="fstat-no" title="function not covered" >function (done) {</span>
+<span class="cstat-no" title="statement not covered" >        spyOn(window, "fetch").and.returnValue(</span>
+          Promise.resolve(new Response('{ "version": "0.1" }'))
+        );
+&nbsp;
+<span class="cstat-no" title="statement not covered" >        calculator.version.then(<span class="fstat-no" title="function not covered" >function (version) {</span></span>
+<span class="cstat-no" title="statement not covered" >          expect(version).toBe("0.1");</span>
+<span class="cstat-no" title="statement not covered" >          done();</span>
+        });
+      });
+    });
+  });
+});
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Tue Feb 09 2021 11:02:22 GMT+0530 (India Standard Time)
+</div>
+</div>
+<script src="../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../sorter.js"></script>
+</body>
+</html>
